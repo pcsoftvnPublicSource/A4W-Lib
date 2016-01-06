@@ -1,0 +1,131 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Thư viện animation được phát hành bởi pcsoftvn cho phép bạn mở rộng và làm đẹp trang web.">
+    <meta name="keywords" content="HTML,CSS,JavaScript, js, library, plugin,pcsoftvn, animation, web, website">
+    <meta name="author" c ontent="pcsoftvn.com">
+    
+    <link href="./css/semantic.min.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link href="./css/pcsoftvn.animation.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="./js/semantic.min.js" type="text/javascript"></script>
+    <script src="./js/pcsoftvn.animation.js" type="text/javascript"></script>
+</head>
+<!-- START WEBSITE -->
+    
+<body>
+    <div id="title">
+        <h3>hiệu ứng animation cho website</h3>
+        <h5>cung cấp miễn phí bởi pcsoftvn</h5>
+    </div> <!-- end of Title -->
+    
+    <div class="ui stackable four column grid" id="menu">
+        <div class="column fadeInDown">
+            <a href="#intro">
+                <div class="pulse-animation-hover"><img src="./img/info.png"></div>
+                <div class="pg-menu-label">Giới thiệu</div>
+            </a>
+        </div> <!-- Menu item: Introduction -->
+        
+        <div class="column fadeInDown">
+            <a href="#copyright">
+                <div class="pulse-animation-hover"><img src="./img/copyright.png"></div>
+                <div class="pg-menu-label">Bản quyền</div>
+            </a>
+        </div> <!-- Menu item: Copyright -->
+        
+        <div class="column fadeInDown">
+            <a href="#install">
+                <div class="pulse-animation-hover"><img src="./img/install.png"></div>
+                <div class="pg-menu-label">Cài đặt</div>
+            </a>
+        </div>   <!-- Menu item: Install -->
+        
+        <div class="column fadeInDown">
+            <a href="#using">
+                <div class="pulse-animation-hover"><img src="./img/using.png"></div>
+                <div class="pg-menu-label">Sử dụng</div>
+            </a>
+        </div> <!-- Menu item: Using -->
+    </div> <!-- end of Menu -->
+
+    <div id="content">
+        <div id="intro" class="slideInLeft">
+            <h5><b>Giới thiệu A4W Lib</b></h5>
+            <p>Thư viện animation cho website (A4W Lib) là một tập các hiệu ứng động được viết bằng CSS3, giúp trang web của bạn trở nên sinh động hơn. Bạn có thể sử dụng A4W Lib cho website tự viết hoặc nhúng vào các trình CMS phổ thông như Wordpress, Joomla. A4W Lib dễ dùng cho cả những người không chuyên và tương thích tốt với tất cả các loại trình duyệt.</p>
+            <p>Phiên bản hiện tại: v1.1 | Số hiệu ứng: 70 | Ngôn ngữ: CSS 3 + jQuery 1.11.3</p>
+        </div> <!-- Content: Intro -->
+    
+        <div id="copyright" class="slideInRight">
+            <h5><b>Thông tin Bản quyền và Tuyên bố miễn trừ trách nhiệm</b></h5>
+            <p>Tất cả các hiệu ứng của A4W Lib được phát triển, chia sẻ miễn phí và thuộc quyền sở hữu của <a href="http://theappguruz.com/">theappguruz</a>. pcsoftvn chỉ thực hiện việc biên tập và chỉnh sửa để thư viện trở nên dễ dùng và tiện lợi hơn. Việc sử dụng và tái phân phối lại các mã nguồn phải tuân theo quy định của theappguruz. Vui lòng không sao chép, chia sẻ các đoạn mã của theappguruz cũng như của pcsoftvn dưới bất kỳ hình thức tính phí nào.</p>
+            <p>Về lý thuyết, việc sử dụng A4W Lib có thể gây xung đột với website hiện tại của bạn, trong bất kỳ tình huống nào, pcsoftvn không chịu bất kỳ trách nhiệm nào nếu sự cố xảy ra. pcsoftvn không chịu trách nhiệm về tính an toàn của website khi bạn sử dụng các nguồn không phải do pcsoftvn cung cấp.</p>
+        </div> <!-- Content: Copyright -->
+    
+        <div id="install" class="zoomIn">
+            <h5><b>Cài đặt thư viện</b></h5>
+            <p>Để sử dụng A4W Lib bạn cần: thư viện jQuery, 2 tập tin: pcsoftvn.aniamtion.css, pcsoftvn.animation.js</p>
+            <div class="step">
+                <p><b>Bước 1:</b> Kiểm tra thư viện jQuery</p>
+                <p>Nếu bạn đang tự xây dựng website, hãy chắc chắn rằng bạn đang sử dụng phiên bản jQuery 1.11.3 hoặc cao hơn, chúng tôi khuyến kích bạn sử dụng các CDN của jQuery để đạt được hiệu quả tối đa về tốc độ load và băng thông. Nếu bạn chưa biết cách thêm thư viện jQuery, hãy đặt đoạn code dưới đây vào trong thẻ <span class="inline_code">&lt;head&gt;</span> sau tất cả các thẻ <span class="inline_code">&lt;link&gt;</span> và trước tất cả các thẻ <span class="inline_code">&lt;script&gt;</span> khác.</p>
+                <p class="code">&lt;script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"&gt; &lt;/script&gt;</p>
+                <p>Nếu bạn đang sử dụng các trình CMS như Wordpress hay Joomla, hãy vào phần thiết lập của theme/ template hoặc của framework, tìm đến mục cho phép bạn thêm các đoạn mã vào thẻ head và nhập vào đoạn mã ở trên. Để tránh trường hợp load trùng thư viện, hãy mở trang web của bạn, sau đó nhấn tổ hợp Ctr + U (firefox), nhấn tổ hợp Ctrl + F và nhập jQuery nếu có kết quả trùng (như hình phía dưới) thì bạn không cần thêm đoạn mã ở trên nữa mà có thể chuyển sang bước 2.</p>
+                <img class="img-sample" src="./img/check_jquery.png">
+            </div>
+            
+            <div class="step">
+                <p><b>Bước 2:</b> Thêm animation css</p>
+                <p>Nếu bạn đang tự xây dựng website, bạn có thể download file css tại <a href="http://pcsoftvn.com/lib/animation/css/pcsoftvn.animation.css">đây</a> hoặc thêm đoạn code sau vào trong thẻ <span class="inline_code">&lt;head&gt;</span> sau tất cả các thẻ <span class="inline_code">&lt;link&gt;</span> khác</p>
+                <p class="code"> &lt;link real="stylesheet" type="text/css" href="http://pcsoftvn.com/lib/animation/css/pcsoftvn.animation.css"&gt;</p>
+                <p>Nếu bạn đang sử dụng các trình CMS như Wordpress hay Joomla, hãy vào phần thiết lập của theme/ template hoặc của framework, tìm đến mục cho phép bạn thêm các đoạn mã vào thẻ head và nhập vào đoạn mã ở trên.</p>
+            </div>
+            
+             <div class="step">
+                <p><b>Bước 3:</b> Thêm animation js</p>
+                <p>Nếu bạn đang tự xây dựng website, bạn có thể download file js tại <a href="http://pcsoftvn.com/lib/animation/js/pcsoftvn.animation.js">đây</a> hoặc thêm đoạn code sau vào trong thẻ <span class="inline_code">&lt;head&gt;</span> sau tất cả các thẻ <span class="inline_code">&lt;script&gt;</span> khác</p>
+                <p class="code">&lt;script src="http://pcsoftvn.com/lib/animation/js/pcsoftvn.animation.js" type="text/javascript"&gt; &lt;/script&gt;</p>
+                <p>Nếu bạn đang sử dụng các trình CMS như Wordpress hay Joomla, hãy vào phần thiết lập của theme/ template hoặc của framework, tìm đến mục cho phép bạn thêm các đoạn mã vào thẻ head và nhập vào đoạn mã ở trên.</p>
+            </div>
+           
+        </div> <!-- Content: Insatll -->
+        
+        <div id="using" class="slideInUp">
+            <h5><b>Sử dụng A4W Lib</b></h5>
+            <p>Danh sách đầy đủ các hiệu ứng và preview, vui lòng tham khảo tại <a href="http://www.theappguruz.com/tag-tools/web/CSSAnimations/index.html" target="_blank">đây</a>. A4W Lib hiện tại hỗ trợ 3 sự kiện xảy ra hiệu ứng: hiệu ứng tự động khi load trang, hiệu ứng khi mouse hover lên đối tượng và hiệu ứng khi click vào đối tượng.</p>
+            
+            <div class="step">
+                <p><b>Thêm hiệu ứng khi tải trang</b></p>
+                <p>Hiệu ứng sẽ tự động được thực hiện khi load trang. Để thêm hiệu ứng ta thêm class hiệu ứng mong muốn vào đối tượng. Danh sách các hiệu ứng tham khảo tại <a href="http://www.theappguruz.com/tag-tools/web/CSSAnimations/index.html" target="_blank">đây</a>. Ví dụ, ta sẽ thêm hiệu ứng fade in (class là fadeIn) cho một đối tượng hình ảnh (image), đối tượng này đã có sẵn 1 class là <span class="inline_code">img-sample</span></p>
+                <p class="code">&lt;img src=".img/search.png" class="img-sample fadeIn"&gt;</p>
+                <img src="./img/search.png" class="pulse img-animation-sample">
+            </div>
+            
+            <div class="step">
+                <p><b>Thêm hiệu ứng khi mouse hover</b></p>
+                <p>Hiệu ứng sẽ được thực hiện khi để chuột lên đối tượng. Để làm được điều này, ta thêm class dạng <span class="inline_code">xxx-animation-hover</span> vào đối tượng. <span class="inline_code">xxx</span> là tên hiệu ứng, vui lòng tham khảo tại <a href="http://www.theappguruz.com/tag-tools/web/CSSAnimations/index.html" target="_blank">đây</a>. Ví dụ, để làm cho đối tượng hình ảnh nhấp nháy khi để chuột lên, ta thêm class <span class="inline_code">pulse-animation-hover như sau</span></p>
+                <p class="code">&lt;img src="./img/search.png" id="copyright" class="pulse-animation-hover"&gt;</p>
+                <img src="./img/search.png" class="pulse-animation-hover img-animation-sample">
+            </div>
+            
+            <div class="step">
+                <p><b>Thêm hiệu ứng khi click</b></p>
+                <p>Hiệu ứng sẽ được thực hiện khi click chuột vào đối tượng. Để làm được điều này, ta thêm class dạng <span class="inline_code">xxx-animation-click</span> vào đối tượng. <span class="inline_code">xxx</span> là tên hiệu ứng, vui lòng tham khảo tại <a href="http://www.theappguruz.com/tag-tools/web/CSSAnimations/index.html" target="_blank">đây</a>. 
+                <p>Lưu ý: hiệu ứng chỉ xảy ra khi click vào lần đầu tiên, nếu muốn reset lại thì phải refresh (F5) lại trang, hiệu ứng khi click này phù hợp cho các đối tượng là link hoặc button.</p>
+                <p>Ví dụ, để làm cho đối tượng hình ảnh nhấp nháy khi click chuột, ta thêm class <span class="inline_code">pulse-animation-click</span> như sau</p>
+                <p class="code">&lt;img src="./img/search.png" id="copyright" class="pulse-animation-click"&gt;</p>
+                <img src="./img/search.png" class="pulse-animation-click img-animation-sample">
+            </div>
+            
+        </div> <!-- Content: Using -->
+                
+    </div> <!-- end of Content -->
+</body>
+    
+<footer>
+    Biên tập bởi <a href="http://pcsoftvn.com">pcsoftvn</a> | Mã nguồn hiệu ứng thuộc <a href="http://theappguruz.com/">theappguruz</a>
+</footer>
+</html>
